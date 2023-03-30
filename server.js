@@ -105,6 +105,9 @@ const items = {
 }
 
 
+
+
+
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html');
 });
@@ -126,4 +129,13 @@ app.get('/api/characters/playable', (req,res) => {
 app.get('/api/characters/playable/:name', (req,res) => {
     res.json(characters.playable[req.params.name]);
 })
+
+app.get('/api/items', (req, res) => {
+    res.json(items)
+})
+
+app.get('/api/items/:item', (req, res) => {
+    res.json(items[req.params.item])
+})
+
 
