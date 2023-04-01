@@ -104,6 +104,23 @@ const items = {
     
 }
 
+const minigames = {
+    "4p": {
+        mushroom_mixup: {
+            description: "Hurry and move to the pattern that matches the sign I [Toad] hold up!",
+            origin: 'Mario Party'
+        },
+        bombs_away: {
+            description: "Try your best not to fall off the island as it rocks and tilts!",
+            origin: "Mario Party"
+        },
+        shy_guy_says: {
+            description: "Raise the same color of flag that Shy Guy raises. He's going to go faster and faster!",
+            origin: "Mario Party"
+        }
+    }
+}
+
 
 
 
