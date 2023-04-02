@@ -253,7 +253,33 @@ const minigames = {
         bill_blasters: {
             description: "Aim for your rivals and fire away! But be careful-it won't count if it hits their cannon",
             origin:"Mario Party 5"
+        },
+        nightlight_fright: {
+            description: "Let the Chain Chomp come as close as possible, and stop it with the flashlight. Whoever stops it the closest wins!",
+            origin: 'Mario Part 5'
+        },
+        later_skater: {
+            description: "Be the first to finish five laps around the rink. Try your best not to lose speed!",
+            origin:"Mario Party 5"
+        },
+        catch_you_later: {
+            description: "Pick up letters falling from the sky, and give them back to the Shy Guy!",
+            origin: "Mario Party 6"
+        },
+        trap_ease_artist: {
+            description: "Drop your cage at the right moment to capture as many Goombas as you can!",
+            origin: "Mario Party 6"
+        },
+        what_goes_up: {
+            description: "Jump on Koopa Paratroopas to reach breathtaking heights! Whoever reaches the highest altitude wins!",
+            origin: "Mario Part 6"
+        },
+        snow_whirled: {
+            description: "Outspin everyone else on your snowboard!",
+            origin: "Mario Party 6"
         }
+
+    
     }
 }
 
