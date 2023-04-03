@@ -477,7 +477,7 @@ app.get('/api/items', (req, res) => {
 })
 
 app.get('/api/characters/:character', (req,res) => {
-    res.json(characters[req.params.character])
+    res.json(characters['playable'][req.params.character])
 })
 
 app.get('/api/items/:item', (req, res) => {
