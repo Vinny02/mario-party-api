@@ -451,10 +451,14 @@ app.get('/', (req, res) => {
 });
 
 
+
 app.listen(process.env.PORT || PORT, () => {
     console.log('listening on port 8000')
 })
 
+app.get('/api', (req, res) => {
+    res.sendFile(__dirname + '/index.html');
+});
 
 app.get('/api/characters', (req, res) => {
     res.json(characters)
