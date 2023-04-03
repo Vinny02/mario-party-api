@@ -320,8 +320,120 @@ const minigames = {
             origin: "Mario Party 10"
         }
 
-
     
+    },
+    "2v2": {
+            bobsled_run: {
+                description: "Team up with another player for a race. Cooperate with your partner so you don't fall off the edge. Fall, and you lose the race!"
+            },
+            handcar_havoc: {
+                description: "Race the handcars in teams of two. Be careful not to pick up too much speed on a curve. Fall into the lava, and you're out!"
+            },
+            dungeon_dash: {
+                description: "Teammates must move their feet at the same time to move ahead! You'll trip if you get the timing wrong."
+            },
+            speed_hockey: {
+                description: "Knock the shell into your rivals' goal. The first team to score three goals wins!"
+            },
+            balloon_burst: {
+                description: "Pump air into the Bowser balloon until it pops! Pay attention to the gauge, and get in as much air as you can with each pump."
+            },
+            cake_factory: {
+                description: "Work as a pair and make cakes. One player places cakes. The other, strawberries!"
+            },
+            sky_pilots: {
+                description: "Control the plane with another player, and fly to the finish line!"
+            },
+            etch_n_catch: {
+                description: "Work together with your partner to surround the stamps with your crayons."
+            },
+            picking_panic: {
+                description: "Pass the cherries at the right time, and put as many as you can in the basket."
+            },
+            eatsa_pizza: {
+                description: "Pair up to gobble as much of the giant pizza as you can! Pepperoni and crust take longer to chomp."
+            },
+            puddle_paddle: {
+                description: "Climb aboard a two-person raft, and collect coins. Be careful not to get hit by the hammers!"
+            },
+            dungeon_duos: {
+                description: "Help your teammate to clear all the obstacles in this dark, dreary dungeon!"
+            },
+            revers_a_bomb: {
+                description: "Blow up the other side! Press the buttons that light up to send Bob-ombs to your rivals. Hit them 10 times to win!"
+            },
+            burnstile: {
+                description: "Jump to avoid the spiky turnstile!"
+            },
+            rocky_road: {
+                description: "Break down the boulders blocking the road, and be the first team to the goal!"
+            },
+            cashapult: {
+                description: "Use the seesaw to launch into the air and collect as many floating coins as you can. Each player only gets two jumps though!"
+            },
+            paint_misbehavin: {
+                description: "Shoot Goombas to paint them your team color."
+            },
+            winner_or_dinner: {
+                description: "Grab coins, but watch out for Piranha Plants!"
+            }
+    },
+    "3v1": {
+            piranhas_pursuit: {
+              description: "Solo side: Mash the button to escape! Team side: Ground-pound to feed Petey Piranha with rain."
+            },
+            tug_o_war: {
+              description: "Solo side: Use your super strength to pull the rope and drag the opposing team off the cliff! Team side: Pull your rival off the cliff first!"
+            },
+            archer_ival: {
+              description: "Solo side: Try to hit the moving targets. Team side: Avoid getting hit."
+            },
+            look_away: {
+              description: "Solo side: Choose a direction to look by the time the music stops. Team side: Look a different direction. Don't get tricked!"
+            },
+            quicksand_cache: {
+              description: "Solo side: Stop your rivals from collecting coins! Team side: If you get sucked into the quicksand, you lose."
+            },
+            tidal_toss: {
+              description: "Solo side: Ground-pound the boat to send waves toward your rivals. Team side: Jump over the waves!"
+            },
+            boulder_ball: {
+              description: "Solo side: Roll boulders down the slope to interfere with the climbers. Team side: Dodge the boulders and get to the top!"
+            },
+            coconut_conk: {
+              description: "Solo side: Roll around to dodge the falling coconuts. Team side: Ground-pound to drop coconuts on the solo player!"
+            },
+            spotlight_swim: {
+              description: "Solo side: Stay out of the spotlight! Team side: All of you must shine all three searchlights on the solo player together."
+            },
+            hide_and_sneak: {
+              description: "Solo side: Find your rivals! Team side: Hide!"
+            },
+            river_raiders: {
+              description: "Collect coins that travel down the river. Be careful not to hit the floating logs!"
+            },
+            goal: {
+              description: "Solo side: Play as the goalie and block shots. Team side: Play as the kickers, and try to make 10 goals."
+            },
+            money_belts: {
+              description: "Grab as many coins as possible. Don't fall off, or you'll lose time!"
+            },
+            squared_away: {
+              description: "Solo side: Don't get crushed. Team side: Cooperate to chase down the solo player."
+            },
+            tube_it_or_lose_it: {
+              description: "Solo side: Try to pop your rivals' tubes. Team side: Steer clear until you reach the goal."
+            },
+            pogo_a_go_go: {
+              description: "Solo side: Spin the stage to make your rivals fall into a hole. Team side: Don't fall into the holes."
+            },
+            tackle_takedown: {
+              description: "Solo side: Run the ball to the end zone. Team side: Tackle the runner."
+            },
+            skewer_scurry: {
+              description: "Solo side: Select a direction to attack. Try to fake out your rivals! Team side: Run and hide!"
+            }
+          
     }
 }
 
@@ -363,5 +475,11 @@ app.get('/api/items', (req, res) => {
 app.get('/api/items/:item', (req, res) => {
     res.json(items[req.params.item])
 })
+
+
+app.get('/api/minigames', (req,res) => {
+    res.json(minigames)
+})
+
 
 
