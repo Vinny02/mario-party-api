@@ -277,7 +277,49 @@ const minigames = {
         snow_whirled: {
             description: "Outspin everyone else on your snowboard!",
             origin: "Mario Party 6"
+        },
+        dark_n_crispy: {
+            description: "Bowser is lurking in the darkness! Avoid him and his fire-breathing attack. Keep running until the very end!",
+            origin: "Mario Party 6"
+        },
+        pit_boss: {
+            description: "Dodge Bowser's rolling spike spheres at all costs!",
+            origin: "Mario Party 6"
+        },
+        xray_payday: {
+            description: "Watch the boxes as they get x-rayed to see what's inside. Try to open boxes with coins in them!",
+            origin: 'Mario Party 6'
+        },
+        montys_revenge: {
+            description: "Peek out of the holes, but don't let a Monty Mole whack your head! The player who stays out longest wins!",
+            origin: "Mario Party 7"
+        },
+        the_final_countdown: {
+            description: "Stay safe until time runs out. Be careful not to fall into a hole!",
+            origin: "Mario Party 7"
+        },
+        pokey_pummel: {
+            description: "Keep swinging your hammer to knock Pokey down to size! Each segment takes five hits to knock out.",
+            origin: "Mario Party 7"
+        },
+        manor_of_escape: {
+            description: "Find the door that leads to the floor below. Be the first to escape the manor to win!",
+            origin: "Mario Party 9"
+        },
+        goomba_spotting: {
+            description: "Count the number of Goombas that run by. Be careful, because once you've decided on your count, you can't change it.",
+            origin: "Mario Party 9"
+            
+        },
+        flash_forward: {
+            description: "Get to the center of the platform and face the camera just in time for the picture to be taken!",
+            origin: "Mario Party 10"
+        },
+        rapid_river_race: {
+            description: "Steer your hovercraft to the finish line. Go as fast as you can, but watch out for Urchins!",
+            origin: "Mario Party 10"
         }
+
 
     
     }
