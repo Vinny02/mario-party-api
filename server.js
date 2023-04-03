@@ -476,10 +476,33 @@ app.get('/api/items/:item', (req, res) => {
     res.json(items[req.params.item])
 })
 
-
 app.get('/api/minigames', (req,res) => {
     res.json(minigames)
 })
+
+
+app.get('/api/minigames/:category', (req,res) => {
+    if(minigames[req.params.category]) {
+        res.json(minigames[req.params.category])
+    }
+    else {
+        const unknown = {'unknown':null}
+        res.json(unknown)
+        
+    }
+})
+
+app.get('/api/minigames/4p/:game', (req,res) => {
+    if(minigames['4p'][req.params.game]) {
+        res.json(minigames['4p'][req.params.game])
+    }
+    else {
+        const unknown = {'unknown':null}
+        res.json(unknown)
+        
+    }
+})
+
 
 
 
