@@ -476,6 +476,10 @@ app.get('/api/items', (req, res) => {
     res.json(items)
 })
 
+app.get('/api/characters/:character', (req,res) => {
+    res.json(characters[req.params.character])
+})
+
 app.get('/api/items/:item', (req, res) => {
     res.json(items[req.params.item])
 })
